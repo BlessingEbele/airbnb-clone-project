@@ -246,3 +246,93 @@ Implements indexing for faster queries and caching strategies using Redis. These
 
 ---
 
+## 🔐 API Security
+
+Security is a critical component of the Airbnb Clone project, as the system handles sensitive user data, financial transactions, and access-controlled content. The backend will implement several key security mechanisms to ensure data confidentiality, integrity, and availability.
+
+---
+
+### 🔑 Authentication
+
+**What It Is:**  
+Authentication verifies the identity of users accessing the system.
+
+**Implementation:**  
+- Token-based authentication (e.g., JWT or Django’s TokenAuth).
+- Secure password hashing (e.g., using Django’s default PBKDF2).
+
+**Why It Matters:**  
+Protects user accounts by ensuring only registered users can access their profile, make bookings, or manage properties.
+
+---
+
+### 🛡️ Authorization
+
+**What It Is:**  
+Authorization controls what authenticated users are allowed to do within the system.
+
+**Implementation:**  
+- Role-based access control (RBAC) to distinguish between guests, hosts, and admins.
+- Permission checks on API endpoints.
+
+**Why It Matters:**  
+Ensures users can only perform actions they are authorized for—e.g., a guest should not delete a property, and a host should not modify someone else’s bookings.
+
+---
+
+### 📊 Rate Limiting
+
+**What It Is:**  
+Rate limiting restricts the number of API requests a user or client can make in a given period.
+
+**Implementation:**  
+- Middleware or tools (e.g., Django Ratelimit or DRF throttle classes) to throttle requests.
+- Custom rate limits for sensitive endpoints like login and payments.
+
+**Why It Matters:**  
+Prevents brute-force attacks, reduces server overload, and protects against abuse or denial-of-service (DoS) attempts.
+
+---
+
+### 🔒 Data Encryption
+
+**What It Is:**  
+Encryption protects sensitive data during transmission and storage.
+
+**Implementation:**  
+- HTTPS for all communications between the client and server.
+- Database-level encryption for sensitive fields (e.g., payment details).
+
+**Why It Matters:**  
+Keeps user credentials, personal data, and transaction information secure from potential breaches or man-in-the-middle attacks.
+
+---
+
+### 🧪 Input Validation & Error Handling
+
+**What It Is:**  
+Validates user input and gracefully handles unexpected behavior.
+
+**Implementation:**  
+- Use Django and DRF serializers for input validation.
+- Sanitize and validate form data before processing.
+- Handle and log errors securely without exposing sensitive system details.
+
+**Why It Matters:**  
+Prevents injection attacks (like SQL or XSS) and helps maintain system stability by catching and managing errors properly.
+
+---
+
+### 💼 Secure Payments
+
+**What It Is:**  
+Protects the integrity and confidentiality of financial transactions.
+
+**Implementation:**  
+- Integrate with trusted third-party payment processors (e.g., Stripe, Paystack).
+- Store only necessary transaction data; never store raw card details.
+
+**Why It Matters:**  
+Ensures compliance with payment industry standards (e.g., PCI-DSS), and builds trust with users who rely on the system for safe transactions.
+
+---
