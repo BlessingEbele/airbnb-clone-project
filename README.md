@@ -198,5 +198,51 @@ Allows users to leave feedback and ratings on properties after a stay.
 - **One Property** ⟶ **Many Reviews**  
 - **One User** ⟶ **Many Reviews**
 
-This schema ensures the application can scale efficiently, support critical features like user management and booking, and optimize for both performance and data integrity.
+## 🔍 Feature Breakdown
+
+The Airbnb Clone backend is packed with features designed to simulate a real-world property booking platform. Each feature below plays a vital role in supporting user interaction, transaction processing, and data flow throughout the application.
+
+---
+
+### 👤 User Management
+
+Provides functionality for secure user registration, login, profile updates, and account deletion. This ensures each user—host or guest—can safely access and manage their personal data, making it a core component of the system's identity and access control.
+
+---
+
+### 🏠 Property Management
+
+Enables hosts to create, update, retrieve, and delete property listings. This feature supports the business logic for displaying available accommodations to users and plays a key role in the core offering of the platform.
+
+---
+
+### 📅 Booking System
+
+Allows guests to book available properties by specifying check-in/check-out dates. It also supports modifications and cancellations, making it critical for managing property availability and coordinating user stays.
+
+---
+
+### 💳 Payment Processing
+
+Handles the processing and recording of payments related to property bookings. It ensures secure transactions between users and the platform, tracking payment statuses and methods to maintain financial accountability.
+
+---
+
+### ⭐ Review System
+
+Permits users to leave feedback and ratings on properties they’ve stayed in. This helps foster transparency and trust in the platform, while also allowing hosts to improve their services based on user input.
+
+---
+
+### ⚙️ API Documentation
+
+The backend APIs are fully documented using the OpenAPI standard and GraphQL schema documentation. This ensures that both frontend developers and third-party integrators can easily understand and use the endpoints.
+
+---
+
+### 🚀 Database Optimization
+
+Implements indexing for faster queries and caching strategies using Redis. These optimizations enhance the performance and scalability of the platform, especially under heavy user loads.
+
+---
 
