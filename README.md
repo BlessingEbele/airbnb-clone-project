@@ -336,3 +336,34 @@ Protects the integrity and confidentiality of financial transactions.
 Ensures compliance with payment industry standards (e.g., PCI-DSS), and builds trust with users who rely on the system for safe transactions.
 
 ---
+
+## 🚀 CI/CD Pipeline
+
+### What is CI/CD?
+
+**CI/CD (Continuous Integration and Continuous Deployment/Delivery)** is a modern software development practice that automates the building, testing, and deployment of code. CI ensures that changes to the codebase are integrated smoothly, while CD ensures these changes are delivered to production efficiently and reliably.
+
+---
+
+### Why It Matters for This Project
+
+Implementing CI/CD pipelines in the Airbnb Clone project is crucial for:
+
+- **Automation:** Reduces manual work and human error by automating testing, builds, and deployments.
+- **Speed:** Speeds up the development lifecycle by catching bugs early and deploying updates faster.
+- **Consistency:** Ensures that all contributors follow the same standards and workflows, even in a collaborative team.
+- **Reliability:** Guarantees that code is tested and production-ready before going live, improving overall application stability.
+
+---
+
+### 🛠️ Recommended Tools
+
+- **GitHub Actions:** Automates tasks such as testing, linting, and deployment directly from your GitHub repository.
+- **Docker:** Provides consistent development and production environments by containerizing the application and its dependencies.
+- **Docker Compose:** Helps manage multi-container setups for services like Django, PostgreSQL, Redis, and Celery.
+- **Heroku / Render / Railway (optional):** Can be used as deployment platforms for staging or production environments.
+- **Coverage.py + pytest:** For test automation and code coverage reporting.
+- **Black / Flake8:** For automated code formatting and linting during CI runs.
+
+---
+
